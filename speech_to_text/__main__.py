@@ -211,4 +211,4 @@ def on_close(page, sockets):
 
 
 if __name__ == "__main__":
-    eel.start("index.html", size=(1024, 1024), close_callback=on_close, mode=None)
+    eel.start("index.html", size=(1024, 1024), close_callback=on_close, port=8080, mode=None)

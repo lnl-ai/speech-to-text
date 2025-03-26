@@ -20,7 +20,7 @@ RUN pip install --upgrade pip && \
 # RUN python3 -c "from faster_whisper import WhisperModel; WhisperModel('small')"
 
 # 设置默认启动端口（如 Web 服务监听在 5000）
-EXPOSE 5000
+EXPOSE 8000
 
 # 启动应用（你可以根据实际入口模块调整这里）
 CMD ["python3", "-m", "speech_to_text"]

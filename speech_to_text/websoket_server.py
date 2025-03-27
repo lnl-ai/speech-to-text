@@ -22,7 +22,7 @@ class WebSocketServer:
         path = os.path.join(app_root_dir, "websocket_client", "websocket_client.html")
         webbrowser.open("file://" + path)
 
-    async def handler(self, ws: websockets.WebSocketServerProtocol, path):
+    async def handler(self, ws: websockets.WebSocketServerProtocol):
         self.websocket = ws
         try:
             await ws.wait_closed()

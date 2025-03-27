@@ -207,7 +207,7 @@ def on_close(page, sockets):
 
     if transcriber and transcriber.transcribing:
         stop_transcription()
-    sys.exit()
+    # sys.exit()
 
 
 if __name__ == "__main__":
